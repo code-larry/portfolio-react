@@ -3,6 +3,7 @@
 
 I built this project to practice React.js and Next.js.
 This portfolio will be used to show the projects I am working on.
+This project has been deployed on Vercel and is available at https://larry-basin.vercel.app/
 
 ### Built With
 
