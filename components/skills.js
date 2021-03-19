@@ -2,6 +2,7 @@ import React from 'react'
 import styles from '../styles/Skills.module.css'
 
 export const Skills = () => {
+	
 	return (
 		<section className={styles.skills} id="skills">
 			<h2 className={styles.h2}>Skills</h2>

@@ -13,10 +13,10 @@ export const Projects = () => {
 					<a href="https://github.com/code-larry/SymfonyShop" target="_blank" rel="noreferrer noopener" className={styles.btn}>SymfonyShop</a>
 				</div>
 				<div className={styles.projects__item}>
-					<a href="#" target="_blank" rel="noreferrer noopener" className={styles.btn}>Agendigo (API)</a>
+					<a href="#" target="_blank" rel="noreferrer noopener" className={styles.btn}>Agendigo</a>
 				</div>
 				<div className={styles.projects__item}>
-					<a href="https://github.com/code-larry/SandBox" target="_blank" rel="noreferrer noopener" className={styles.btn}>SandBox</a>
+					<a href="https://github.com/code-larry/portfolio-react" target="_blank" rel="noreferrer noopener" className={styles.btn}>Portfolio React</a>
 				</div>
 				<div className={styles.projects__item}>
 					<a href="#" target="_blank" rel="noreferrer noopener" className={styles.btn}>Coming Soon</a>

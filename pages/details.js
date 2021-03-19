@@ -18,9 +18,9 @@ const Details = () => {
 		</Head>
 		<Navbar />
 		<main className={styles.main}>
-			<Skills title="Skills" id="skills"/>
-			<Projects title="Projects" id="projects"/>
-			<Exp title="Exp" id="exp"/>
+			<Skills />
+			<Projects />
+			<Exp />
 		</main>
 		<Footer />
 		</>
