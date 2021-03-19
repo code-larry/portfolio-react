@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
-import styles from '../styles/Header.module.css'
+import { Link as ScrollLink } from 'react-scroll'
+import styles from '../styles/Navbar.module.css'
 
 export const Navbar = () => {
 
@@ -10,9 +11,9 @@ export const Navbar = () => {
 				<Link href="/">
 					<a className={styles.navbar__item__btn}>Home</a>
 				</Link>
-				<a href="#skills" className={styles.navbar__item__btn}>Skills</a>
-				<a href="#projects" className={styles.navbar__item__btn}>Projects</a>
-				<a href="#experience" className={styles.navbar__item__btn}>Experiences</a>
+				<ScrollLink activeClass={styles.active} to="skills" spy={true} smooth={true} duration={1000} className={styles.navbar__item__btn}>Skills</ScrollLink>
+				<ScrollLink activeClass={styles.active} to="projects" spy={true} smooth={true} duration={1000} className={styles.navbar__item__btn}>Projects</ScrollLink>
+				<ScrollLink activeClass={styles.active} to="exp" spy={true} smooth={true} duration={1000} className={styles.navbar__item__btn}>Experiences</ScrollLink>
 				<Link href="/contact">
 					<a className={styles.navbar__item__btn}>Contact</a>
 				</Link>

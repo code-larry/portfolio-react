@@ -74,5 +74,6 @@
 	
 	.header__button {
 		width: 16rem;
+		margin-bottom: 1rem;
 	}	
 }
