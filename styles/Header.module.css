@@ -1,0 +1,33 @@
+.navbar {
+	padding: 1rem;
+	border-bottom: 1px solid #FAF0C5;
+	text-align: center;
+}
+
+.navbar__item__btn {
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+@media screen and (min-width: 700px) {
+
+	.navbar {
+		background-color: #FAF0C5;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		border-bottom: none;
+		display: flex;
+		justify-content: space-evenly;
+		z-index: 2;
+	}
+
+	.navbar__item__btn {
+		font-size: 2rem;
+		color: #121212;
+	}
+
+	.navbar__item__btn:hover {
+		text-decoration: underline;
+	}
+}
