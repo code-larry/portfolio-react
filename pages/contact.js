@@ -1,5 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
+import Link from 'next/link'
 import styles from '../styles/Contact.module.css'
 
 const Contact = () => {
@@ -25,7 +26,9 @@ const Contact = () => {
 					</div>
 				</div>
 				<div className={styles.header__item}>
-					<a href="details" className={styles.header__button}>Back to details</a>
+					<Link href="/details">
+						<a className={styles.header__button}>Back to details</a>
+					</Link>
 					<a href="docs/resume.pdf" className={styles.header__button} target="_blank">Download my resume</a>
 				</div>
 			</header>

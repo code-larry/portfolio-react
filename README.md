@@ -15,6 +15,7 @@ This portfolio will be used to show the projects I am working on.
 
 * Responsive navbar
 * Show modal to have more details about projects not on Github
+* dark/light mode
 
 <!-- CONTACT -->
 ## Contact
