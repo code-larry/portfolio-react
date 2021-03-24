@@ -19,6 +19,9 @@ export const Projects = () => {
 					<a href="https://github.com/code-larry/portfolio-react" target="_blank" rel="noreferrer noopener" className={styles.btn}>Portfolio React</a>
 				</div>
 				<div className={styles.projects__item}>
+					<a href="https://github.com/code-larry/ImmoReact" target="_blank" rel="noreferrer noopener" className={styles.btn}>Immo React</a>
+				</div>
+				<div className={styles.projects__item}>
 					<a href="#" target="_blank" rel="noreferrer noopener" className={styles.btn}>Coming Soon</a>
 				</div>
 			</div>
