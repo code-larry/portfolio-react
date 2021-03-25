@@ -10,6 +10,11 @@
 	text-transform: uppercase;
 }
 
+.timeline__content ul li {
+	color: #121212;
+	list-style: none;
+}
+
 .experience {
 	padding: 1rem 0;
 	border-bottom: 1px solid #FAF0C5;

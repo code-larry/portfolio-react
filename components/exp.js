@@ -7,6 +7,18 @@ export const Exp = () => {
 			<h2 className={styles.h2}>Experiences</h2>
 			<div className={styles.timeline}>
 
+				<div className={`${styles.timeline__container} ${styles.timeline__container__right}`}>
+					<div className={`${styles.timeline__content} ${styles.timeline__content__right}`}>
+						<h3 className={styles.h3}><i className="fas fa-globe-americas"></i> Agendigo</h3>
+						<p><i className="far fa-clock"></i> <time dateTime="2021-02">Since February 2021</time></p>
+						<p>We built a platform to book different services (Hairdresser, Wellness, ...) in a team of 5 developers within an Agile SCRUM context. I participate as Backend developer.</p>
+						<ul>
+							<li>Frontend : React, Redux, Bootstrap</li>
+							<li>Backend : PHP, Symfony, MySQL, Doctrine</li>
+						</ul>
+					</div>
+				</div>
+
 				<div className={`${styles.timeline__container} ${styles.timeline__container__left}`}>
 					<div className={`${styles.timeline__content} ${styles.timeline__content__left}`}>
 						<h3 className={styles.h3}>O'Clock <i className="fas fa-graduation-cap"></i></h3>
@@ -48,6 +60,7 @@ export const Exp = () => {
 						<p>I graduated a Master's degree in European & International Trade and completed 2 internships abroad in Malta as an Export Agent during 4 months in 2009 and in Australia as a Travel Agent during 7 months in 2010.</p>
 					</div>
 				</div>
+
 			</div>
 		</section>
 	)
