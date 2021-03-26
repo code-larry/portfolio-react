@@ -16,7 +16,9 @@
 	text-decoration: none;
 	text-transform: uppercase;
 	display: block;
-	margin-top: 1rem;
+	margin: 1rem auto 0;
+	cursor: pointer;
+	width: 80%;
 }
 
 .button {
@@ -26,7 +28,7 @@
 	font-size: 2rem;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
 
 	.button {
 		display: none;
@@ -50,7 +52,6 @@
 	.navbar__item__btn {
 		font-size: 2rem;
 		color: #121212;
-		cursor: pointer;
 		margin-top: 0;
 	}
 

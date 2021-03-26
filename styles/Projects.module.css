@@ -10,14 +10,22 @@
 	border-bottom: 1px solid #FAF0C5;
 }
 
+.projects__items {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
 .projects__item {
 	height: 250px;
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 1.5rem;
-	background: url(../public/images/portfolio-mini.jpg) no-repeat;
-	background-size: cover;
+	border-radius: 5px;
+	background: #FAF0C5;
 }
 
 .projects__item .btn {
@@ -27,7 +35,7 @@
 	background: #121212;
 	padding: 1rem;
 	border-radius: 5px;
-	border: 1px solid #FAF0C5;
+	cursor: pointer;
 }
 
 .projects__item .btn:hover {
@@ -36,19 +44,20 @@
 	transition: 0.7s ease-in 0s;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
+
 	.projects {
 		padding-top: 5rem;
 	}
-	
-	.projects__items {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-around;
-		align-items: center;
-	}
-	
+
 	.projects__item {
 		width: 40%;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	
+	.projects__item {
+		width: 30%;
 	}
 }

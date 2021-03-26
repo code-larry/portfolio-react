@@ -28,12 +28,12 @@ export const Skills = () => {
 								<td className={styles.td}>Symfony</td>
 							</tr>
 							<tr>
-								<td className={styles.td}>Lumen</td>
-								<td className={styles.td}>GIT</td>
+								<td className={styles.td}>React.js</td>
+								<td className={styles.td}>Next.js</td>
 							</tr>
 							<tr>
+								<td className={styles.td}>GIT</td>
 								<td className={styles.td}>Ubuntu</td>
-								<td className={styles.td}>MacOS</td>
 							</tr>
 						</tbody>
 					</table>

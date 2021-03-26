@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from '../styles/Projects.module.css'
+import { Link as ScrollLink } from 'react-scroll'
 
 export const Projects = () => {
 	return (
@@ -13,7 +14,8 @@ export const Projects = () => {
 					<a href="https://github.com/code-larry/SymfonyShop" target="_blank" rel="noreferrer noopener" className={styles.btn}>SymfonyShop</a>
 				</div>
 				<div className={styles.projects__item}>
-					<a href="#" target="_blank" rel="noreferrer noopener" className={styles.btn}>Agendigo</a>
+					<ScrollLink activeClass={styles.active} to="exp" spy={true} smooth={true} duration={1000} className={styles.btn}>Agendigo</ScrollLink>
+					{/* <a href="#" target="_blank" rel="noreferrer noopener" className={styles.btn}>Agendigo</a> */}
 				</div>
 				<div className={styles.projects__item}>
 					<a href="https://github.com/code-larry/portfolio-react" target="_blank" rel="noreferrer noopener" className={styles.btn}>Portfolio React</a>

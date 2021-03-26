@@ -18,8 +18,8 @@ const Details = () => {
 		</Head>
 		<Navbar />
 		<main className={styles.main}>
-			<Skills />
 			<Projects />
+			<Skills />
 			<Exp />
 		</main>
 		<Footer />
