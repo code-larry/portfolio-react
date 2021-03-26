@@ -1,10 +1,14 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import styles from '../styles/Projects.module.css'
 import { Link as ScrollLink } from 'react-scroll'
+import {Theme} from './context/theme'
 
 export const Projects = () => {
+
+	const {theme} = useContext(Theme)
+
 	return (
-		<section className={styles.projects} id="projects">
+		<section className={theme ? styles.projects : styles.projectsLight} id="projects">
 			<h2 className={styles.h2}>Projects</h2>
 			<div className={styles.projects__items}>
 				<div className={styles.projects__item}>

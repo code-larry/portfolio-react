@@ -1,3 +1,8 @@
+.home_container {
+	height: 100vh;
+	position: relative;
+}
+
 .header {
 	text-align: center;
 	text-transform: uppercase;
@@ -26,9 +31,36 @@
 	border-radius: 5px;
 }
 
+/* LIGHT MODE */
+
+.home_containerLight {
+	height: 100vh;
+	position: relative;
+	background: #FAF0C5;
+}
+
+.home_containerLight .header__item__title {
+	font-size: 3rem;
+	color: #121212;
+}
+
+.home_containerLight .header__item__para {
+	color: #121212;
+}
+
+.home_containerLight .header__item__button {
+	text-decoration: none;
+	font-size: 1.5rem;
+	border: 1px solid #121212;
+	color: #121212;
+	padding: 1rem;
+	border-radius: 5px;
+}
+
 .header__item__button:hover {
 	background-color: #43B6B7;
 	border: none;
+	color: #FAF0C5;
 	transition: 0.7s ease-in 0s;
 }
 
@@ -40,14 +72,20 @@
 	.header__item__para {
 		font-size: 1.5rem;
 	}
+
+	/* LIGHT MODE */
+
+	.home_containerLight .header__item__title {
+		font-size: 5rem;
+	}
+
+	.home_containerLight .header__item__para {
+		font-size: 1.5rem;
+	}
 }
 
 @media screen and (min-width: 950px) {
-	.home_container {
-		height: 100vh;
-		position: relative;
-	}
-	
+
 	.header {
 		width: 850px;
 		height: 300px;
@@ -73,12 +111,44 @@
 		animation-play-state: paused;
 	}
 	
-	.header:hover {
-		animation-play-state: running;
-	}
-	
 	.header__item__title {
 		font-size: 7rem;
+	}
+
+	/* LIGHT MODE */
+
+	.home_containerLight .header {
+		width: 850px;
+		height: 300px;
+		padding: 2rem 1rem;
+		top: 50%;
+		left: 50%;
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		background-repeat: no-repeat;
+		background-image:   linear-gradient(to right, #121212 100%, #121212 100%),
+							linear-gradient(to bottom, #121212 100%, #121212 100%),
+							linear-gradient(to right, #121212 100%, #121212 100%),
+							linear-gradient(to bottom, #121212 100%, #121212 100%);
+		background-size:    100% 2px,
+							2px 100%,
+							100% 2px,
+							2px 100%;
+		background-position:    0 0,
+								100% 0,
+								100% 100%,
+								0 100%;
+		animation: border 2s linear 1;
+		animation-play-state: paused;
+	}
+
+	.home_containerLight .header__item__title {
+		font-size: 7rem;
+		color: #121212;
+	}
+
+	.header:hover {
+		animation-play-state: running;
 	}
 	
 	@keyframes border {

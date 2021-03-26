@@ -1,3 +1,8 @@
+.experience {
+	padding: 1rem 0;
+	border-bottom: 1px solid #FAF0C5;
+}
+
 .h2 {
 	margin-bottom: 2rem;
 	text-align: center;
@@ -13,11 +18,6 @@
 .timeline__content ul li {
 	color: #121212;
 	list-style: none;
-}
-
-.experience {
-	padding: 1rem 0;
-	border-bottom: 1px solid #FAF0C5;
 }
 
 /* Container around content */
@@ -44,13 +44,39 @@
 	border-radius: 6px;
 }
 
-
 .timeline__content p,
 .timeline__content i,
 .timeline__content time,
 .timeline__content a {
 	color: #121212;
 	margin-bottom: 0.5rem;
+}
+
+/* LIGHT MODE */
+
+.experienceLight {
+	padding: 1rem 0;
+	border-bottom: 3px solid #121212;
+}
+
+.experienceLight .h2 {
+	margin-bottom: 2rem;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 2rem;
+	color: #121212;
+}
+
+.experienceLight .timeline__content__left,
+.experienceLight .timeline__content__right {
+	text-align: center;
+	padding: 20px 30px;
+	background-color: #FAF0C5;
+	position: relative;
+	border-radius: 6px;
+	border: 2px solid #121212;
+	margin-right: 1rem;
+	margin-left: 1rem;
 }
 
 @media screen and (min-width: 700px) {
@@ -142,5 +168,60 @@
 	/* The actual content (right containers) */
 	.timeline__content__right {
 		text-align: left;
+	}
+
+	/* LIGHT MODE */
+
+	.experienceLight {
+		padding-top: 5rem;
+	}
+
+	.experienceLight .timeline::after {
+		content: '';
+		position: absolute;
+		width: 6px;
+		background-color: #121212;
+		top: 0;
+		bottom: 0;
+		left: 50%;
+		margin-left: -3px;
+	}
+
+	.experienceLight .timeline__container__left::before {
+		content: " ";
+		height: 0;
+		position: absolute;
+		top: 22px;
+		width: 0;
+		z-index: 1;
+		right: 30px;
+		border: medium solid #121212;
+		border-width: 10px 0 10px 10px;
+		border-color: transparent transparent transparent #121212;
+	}
+
+	.experienceLight .timeline__container__right::before {
+		content: " ";
+		height: 0;
+		position: absolute;
+		top: 22px;
+		width: 0;
+		z-index: 1;
+		left: 30px;
+		border: medium solid #121212;
+		border-width: 10px 10px 10px 0;
+		border-color: transparent #121212 transparent transparent;
+	}
+
+	.experienceLight .timeline__content__left {
+		text-align: right;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.experienceLight .timeline__content__right {
+		text-align: left;
+		margin-left: 0;
+		margin-right: 0;
 	}
 }

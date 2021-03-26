@@ -1,9 +1,13 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import styles from '../styles/Exp.module.css'
+import {Theme} from './context/theme'
 
 export const Exp = () => {
+
+	const {theme} = useContext(Theme)
+
 	return (
-		<section className={styles.experience} id="exp">
+		<section className={theme ? styles.experience : styles.experienceLight} id="exp">
 			<h2 className={styles.h2}>Experiences</h2>
 			<div className={styles.timeline}>
 
@@ -24,7 +28,7 @@ export const Exp = () => {
 						<h3 className={styles.h3}>O'Clock <i className="fas fa-graduation-cap"></i></h3>
 						<p><time dateTime="2020-09">September 2020</time> - <time dateTime="2021-03">March 2021</time> <i className="far fa-clock"></i></p>
 						<p>Full-time remote Bootcamp to get certified as a Fullstack Web & Mobile Developer.</p>
-						<p>The complete program is available <a href="https://oclock.io/formations/developpeur-web" target="_blank" rel="noreferrer noopener">here</a>.</p>
+						<p>You can have a look to the <a href="https://oclock.io/formations/developpeur-web" target="_blank" rel="noreferrer noopener">complete program</a>.</p>
 					</div>
 				</div>
 

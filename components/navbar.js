@@ -1,11 +1,13 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect, useContext} from 'react'
 import Link from 'next/link'
 import { Link as ScrollLink } from 'react-scroll'
 import styles from '../styles/Navbar.module.css'
+import {Theme} from './context/theme'
 
 export const Navbar = () => {
 
 	const [toggleMenu, setToggleMenu] = useState(false)
+	const {theme} = useContext(Theme)
 
 	const toggleNavResponsive = () => {
 		setToggleMenu(!toggleMenu)
@@ -22,7 +24,7 @@ export const Navbar = () => {
 	}, [])
 	return (
 		<header>
-			<nav className={styles.navbar}>
+			<nav className={theme ? styles.navbar : styles.navbarLight}>
 				<div className={toggleMenu ? styles.blockBtn.show : styles.blockBtn} >
 					<Link href="/">
 					<a className={styles.navbar__item__btn}>Home</a>
@@ -35,7 +37,7 @@ export const Navbar = () => {
 					</Link>
 				</div>	
 			</nav>
-			<div className={styles.button} onClick={toggleNavResponsive}>
+			<div className={theme ? styles.button : styles.buttonLight} onClick={toggleNavResponsive}>
 			{toggleMenu ? (
 					<i className="fas fa-times" aria-hidden="true"></i>
 				) : (

@@ -1,10 +1,13 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import styles from '../styles/Skills.module.css'
+import {Theme} from './context/theme'
 
 export const Skills = () => {
+
+	const {theme} = useContext(Theme)
 	
 	return (
-		<section className={styles.skills} id="skills">
+		<section className={theme ? styles.skills : styles.skillsLight} id="skills">
 			<h2 className={styles.h2}>Skills</h2>
 			<div className={styles.skills__items}>
 				<div className={styles.skills__item__left}>

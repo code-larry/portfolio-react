@@ -1,9 +1,13 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import styles from '../styles/Contact.module.css'
+import {Theme} from '../components/context/theme'
 
 const Contact = () => {
+
+	const {theme} = useContext(Theme)
+
 	return (
 		<>
 		<Head>
@@ -12,7 +16,7 @@ const Contact = () => {
 			<link rel="preconnect" href="https://fonts.gstatic.com" />
 			<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 		</Head>
-		<div className={styles.contact_container}>
+		<div className={theme ? styles.contact_container : styles.contact_containerLight}>
 			<header className={styles.header}>
 				<div className={styles.header__item}>
 					<div className={styles.header__item__img}>

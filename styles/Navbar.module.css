@@ -28,6 +28,36 @@
 	font-size: 2rem;
 }
 
+/* LIGHT MODE */
+
+.navbarLight {
+	padding: 1.5rem;
+	border-bottom: 3px solid #121212;
+	text-align: center;
+	background: #FAF0C5;
+}
+
+.buttonLight {
+	position: absolute;
+	top: 8px;
+	right: 20px;
+	font-size: 2rem;
+}
+
+.buttonLight i {
+	color: #121212;
+}
+
+.navbarLight .navbar__item__btn {
+	text-decoration: none;
+	text-transform: uppercase;
+	display: block;
+	margin: 1rem auto 0;
+	cursor: pointer;
+	width: 80%;
+	color: #121212;
+}
+
 @media screen and (min-width: 768px) {
 
 	.button {
@@ -36,6 +66,16 @@
 
 	.navbar {
 		background-color: #FAF0C5;
+		padding: 1rem;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		border-bottom: none;
+		z-index: 2;
+	}
+
+	.navbarLight {
+		background-color: #121212;
 		padding: 1rem;
 		position: fixed;
 		top: 0;
@@ -55,10 +95,23 @@
 		margin-top: 0;
 	}
 
+	.navbarLight .navbar__item__btn {
+		font-size: 2rem;
+		color: #FAF0C5;
+		margin-top: 0;
+	}
+
 	.active {
 		padding: 3px 5px;
 		color: #FAF0C5;
 		background: #121212;
+		border-radius: 5px;
+	}
+
+	.navbarLight .active {
+		padding: 3px 5px;
+		color: #121212;
+		background: #FAF0C5;
 		border-radius: 5px;
 	}
 

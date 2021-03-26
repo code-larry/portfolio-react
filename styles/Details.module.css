@@ -2,8 +2,20 @@
 	margin: 0 1rem;
 }
 
+.mainLight {
+	background: #FAF0C5;
+	margin: 0 1rem;
+}
+
 @media screen and (min-width: 1200px) {
 	.main {
+		width: 80%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.mainLight {
+		background: #FAF0C5;
 		width: 80%;
 		margin-right: auto;
 		margin-left: auto;

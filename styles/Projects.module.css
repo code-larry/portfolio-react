@@ -1,13 +1,13 @@
+.projects {
+	padding: 1rem 0;
+	border-bottom: 1px solid #FAF0C5;
+}
+
 .h2 {
 	margin-bottom: 2rem;
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 2rem;
-}
-
-.projects {
-	padding: 1rem 0;
-	border-bottom: 1px solid #FAF0C5;
 }
 
 .projects__items {
@@ -31,10 +31,13 @@
 .projects__item .btn {
 	text-decoration: none;
 	text-transform: uppercase;
+	text-align: center;
 	font-size: 2rem;
 	background: #121212;
 	padding: 1rem;
 	border-radius: 5px;
+	margin-right: 0.5em;
+	margin-left: 0.5em;
 	cursor: pointer;
 }
 
@@ -44,10 +47,45 @@
 	transition: 0.7s ease-in 0s;
 }
 
+/* LIGHT MODE */
+
+.projectsLight {
+	padding: 1rem 0;
+	border-bottom: 3px solid #121212;
+}
+
+.projectsLight .h2 {
+	margin-bottom: 2rem;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 2rem;
+	color: #121212;
+}
+
+.projectsLight .projects__item {
+	height: 250px;
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 1.5rem;
+	border-radius: 5px;
+	background: #FAF0C5;
+	border: 2px solid #121212;
+}
+
 @media screen and (min-width: 768px) {
 
 	.projects {
 		padding-top: 5rem;
+	}
+
+	.projectsLight {
+		padding-top: 5rem;
+	}
+
+	.projectsLight .projects__item {
+		width: 40%;
 	}
 
 	.projects__item {
@@ -58,6 +96,10 @@
 @media screen and (min-width: 960px) {
 	
 	.projects__item {
+		width: 30%;
+	}
+
+	.projectsLight .projects__item {
 		width: 30%;
 	}
 }

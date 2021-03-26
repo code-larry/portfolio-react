@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import Head from 'next/head'
 import {Navbar} from '../components/navbar'
 import {Skills} from '../components/skills'
@@ -6,8 +6,12 @@ import {Projects} from '../components/projects'
 import {Exp} from '../components/exp'
 import {Footer} from '../components/footer'
 import styles from '../styles/Details.module.css'
+import {Theme} from '../components/context/theme'
 
 const Details = () => {
+
+	const {theme} = useContext(Theme)
+
 	return (
 		<>
 		<Head>
@@ -17,7 +21,7 @@ const Details = () => {
 			<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 		</Head>
 		<Navbar />
-		<main className={styles.main}>
+		<main className={theme ? styles.main : styles.mainLight}>
 			<Projects />
 			<Skills />
 			<Exp />

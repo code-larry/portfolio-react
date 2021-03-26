@@ -1,13 +1,13 @@
+.skills {
+	padding: 1rem 0;
+	border-bottom: 1px solid #FAF0C5;
+}
+
 .h2 {
 	margin-bottom: 2rem;
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 2rem;
-}
-
-.skills {
-	padding: 1rem 0;
-	border-bottom: 1px solid #FAF0C5;
 }
 
 .skills__item__center {
@@ -36,6 +36,39 @@
 	text-align: center;
 }
 
+/* LIGHT MODE */
+
+.skillsLight {
+	padding: 1rem 0;
+	border-bottom: 3px solid #121212;
+}
+
+.skillsLight .h2 {
+	margin-bottom: 2rem;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 2rem;
+	color: #121212;
+}
+
+.skillsLight .table {
+	width: 90%;
+	margin: 1em auto;
+	border-collapse: collapse;
+	background: #121212;
+}
+
+.skillsLight .table .thead {
+	background-color: #121212;
+	text-transform: uppercase;
+}
+
+.skillsLight .table .th {
+	color: #FAF0C5;
+	padding: 0.8em;
+	text-align: center;
+}
+
 @media screen and (min-width: 700px) {
 	.skills {
 		padding-top: 5rem;
@@ -49,6 +82,12 @@
 	.skills__item__right {
 		display: flex;
 		justify-content: space-around;
+	}
+
+	/* LIGHT MODE */
+
+	.skillsLight {
+		padding-top: 5rem;
 	}
 }
 
@@ -83,5 +122,13 @@
 		flex-direction: column;
 		justify-content: space-between;
 		width: 20%;
+	}
+
+	/* LIGHT MODE */
+
+	.skillsLight i {
+		font-size: 15rem;	
+		transform: rotate(-30deg);
+		color: #121212;
 	}
 }
