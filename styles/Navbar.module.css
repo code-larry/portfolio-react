@@ -4,6 +4,14 @@
 	text-align: center;
 }
 
+.blockBtn {
+	display: none;
+}
+
+.blockBtn.show {
+	display: block;
+}
+
 .navbar__item__btn {
 	text-decoration: none;
 	text-transform: uppercase;
@@ -29,9 +37,12 @@
 		top: 0;
 		width: 100%;
 		border-bottom: none;
-		display: flex;
-		justify-content: space-evenly;
 		z-index: 2;
+	}
+
+	.blockBtn {
+		display: flex;
+		justify-content: space-around;	
 	}
 
 	.navbar__item__btn {
@@ -42,8 +53,7 @@
 	}
 
 	.active {
-		/* text-decoration: underline; */
-		padding: 5px;
+		padding: 3px 5px;
 		color: #FAF0C5;
 		background: #121212;
 		border-radius: 5px;

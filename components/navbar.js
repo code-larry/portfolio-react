@@ -5,36 +5,25 @@ import styles from '../styles/Navbar.module.css'
 
 export const Navbar = () => {
 
-	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 	const [toggleMenu, setToggleMenu] = useState(false)
 
 	const toggleNavResponsive = () => {
 		setToggleMenu(!toggleMenu)
 	}
-
+	
 	useEffect(() => {
-
-		const changeWidth = () => {
-			setWindowWidth(window.innerWidth)
-
+		const closeMobileMenu = () => {
 			if(window.innerWidth > 700) {
 				setToggleMenu(false)
 			}
 		}
-
-		window.addEventListener('resize', changeWidth)
-
-		return () => {
-			window.removeEventListener('resize', changeWidth)
-		}
+	
+		window.addEventListener('resize', closeMobileMenu)
 	}, [])
-
 	return (
 		<header>
 			<nav className={styles.navbar}>
-			{
-				(toggleMenu || windowWidth > 700) && (
-					<>
+				<div className={toggleMenu ? styles.blockBtn.show : styles.blockBtn} >
 					<Link href="/">
 					<a className={styles.navbar__item__btn}>Home</a>
 					</Link>
@@ -44,12 +33,16 @@ export const Navbar = () => {
 					<Link href="/contact">
 						<a className={styles.navbar__item__btn}>Contact</a>
 					</Link>
-					</>
+				</div>	
+			</nav>
+			<div className={styles.button} onClick={toggleNavResponsive}>
+			{toggleMenu ? (
+					<i className="fas fa-times" aria-hidden="true"></i>
+				) : (
+					<i className="fa fa-bars" aria-hidden="true"></i>
 				)
 			}
-				
-			</nav>
-			<div className={styles.button} onClick={toggleNavResponsive}><i className="fa fa-bars" aria-hidden="true"></i></div>
+			</div>
 		</header>
 	)
 }
