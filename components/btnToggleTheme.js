@@ -8,7 +8,7 @@ export default function btnToggleTheme() {
 
 	return (
 		<div onClick={toggleTheme} className={theme ? styles.day : styles.night}>
-			{theme ? <i class="fas fa-sun"></i> : <i class="fas fa-moon"></i>}
+			{theme ? <i className="fas fa-sun"></i> : <i className="fas fa-moon"></i>}
 		</div>
 	)
 }
