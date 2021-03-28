@@ -21,7 +21,7 @@
 }
 
 .table .thead {
-	background-color: #FAF0C5;
+	background-color: #b1b2b3;
 	text-transform: uppercase;
 }
 
@@ -55,18 +55,27 @@
 	width: 90%;
 	margin: 1em auto;
 	border-collapse: collapse;
-	background: #121212;
+	/* background: #121212; */
+	border: 2px solid #121212;
+	box-shadow: 2px 2px 2px #121212;
+	/* border-radius: 5px; */
 }
 
 .skillsLight .table .thead {
-	background-color: #121212;
+	background-color: #FAF0C5;
 	text-transform: uppercase;
 }
 
 .skillsLight .table .th {
-	color: #FAF0C5;
+	/* color: #FAF0C5; */
 	padding: 0.8em;
 	text-align: center;
+}
+
+.skillsLight .table .td {
+	padding: 0.8em;
+	text-align: center;
+	color: #121212;
 }
 
 @media screen and (min-width: 700px) {
@@ -108,6 +117,7 @@
 	.skills i {
 		font-size: 15rem;	
 		transform: rotate(-30deg);
+		color: #b1b2b3;
 	}
 
 	.skills__item__left {
