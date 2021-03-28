@@ -1,6 +1,6 @@
 .experience {
 	padding: 1rem 0;
-	border-bottom: 1px solid #FAF0C5;
+	border-bottom: 1px solid #b1b2b3;
 }
 
 .h2 {
@@ -8,6 +8,7 @@
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 2rem;
+	color: #b1b2b3;
 }
 
 .h3 {
@@ -96,7 +97,7 @@
 		content: '';
 		position: absolute;
 		width: 6px;
-		background-color: #FAF0C5;
+		background-color: #b1b2b3;
 		top: 0;
 		bottom: 0;
 		left: 50%;
@@ -137,9 +138,9 @@
 		width: 0;
 		z-index: 1;
 		right: 30px;
-		border: medium solid #FAF0C5;
+		border: medium solid #b1b2b3;
 		border-width: 10px 0 10px 10px;
-		border-color: transparent transparent transparent #FAF0C5;
+		border-color: transparent transparent transparent #b1b2b3;
 	}
 	
 	/* Add arrows to the right container (pointing left) */
@@ -151,9 +152,9 @@
 		width: 0;
 		z-index: 1;
 		left: 30px;
-		border: medium solid #FAF0C5;
+		border: medium solid #b1b2b3;
 		border-width: 10px 10px 10px 0;
-		border-color: transparent #FAF0C5 transparent transparent;
+		border-color: transparent #b1b2b3 transparent transparent;
 	}
 	
 	/* Fix the circle for containers on the right side */
