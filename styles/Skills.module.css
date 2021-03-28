@@ -57,10 +57,8 @@
 	width: 90%;
 	margin: 1em auto;
 	border-collapse: collapse;
-	/* background: #121212; */
 	border: 2px solid #121212;
 	box-shadow: 2px 2px 2px #121212;
-	/* border-radius: 5px; */
 }
 
 .skillsLight .table .thead {
@@ -69,7 +67,6 @@
 }
 
 .skillsLight .table .th {
-	/* color: #FAF0C5; */
 	padding: 0.8em;
 	text-align: center;
 }
