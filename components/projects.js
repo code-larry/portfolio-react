@@ -1,7 +1,7 @@
 import React, {useContext} from 'react'
 import styles from '../styles/Projects.module.css'
 import { Link as ScrollLink } from 'react-scroll'
-import {Theme} from './context/theme'
+import {Theme} from '../context/theme'
 
 export const Projects = () => {
 

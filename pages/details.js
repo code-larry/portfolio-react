@@ -6,7 +6,7 @@ import {Projects} from '../components/projects'
 import {Exp} from '../components/exp'
 import {Footer} from '../components/footer'
 import styles from '../styles/Details.module.css'
-import {Theme} from '../components/context/theme'
+import {Theme} from '../context/theme'
 
 const Details = () => {
 

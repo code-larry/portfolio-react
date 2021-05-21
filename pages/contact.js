@@ -2,7 +2,7 @@ import React, {useContext} from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import styles from '../styles/Contact.module.css'
-import {Theme} from '../components/context/theme'
+import {Theme} from '../context/theme'
 
 const Contact = () => {
 

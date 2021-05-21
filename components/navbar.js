@@ -2,7 +2,7 @@ import React, {useState, useEffect, useContext} from 'react'
 import Link from 'next/link'
 import { Link as ScrollLink } from 'react-scroll'
 import styles from '../styles/Navbar.module.css'
-import {Theme} from './context/theme'
+import {Theme} from '../context/theme'
 
 export const Navbar = () => {
 

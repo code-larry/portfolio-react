@@ -1,7 +1,7 @@
 import React, {useContext} from 'react'
 import Link from 'next/link'
 import styles from '../styles/Footer.module.css'
-import {Theme} from './context/theme'
+import {Theme} from '../context/theme'
 
 export const Footer = () => {
 

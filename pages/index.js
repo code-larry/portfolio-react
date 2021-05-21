@@ -2,7 +2,7 @@ import React, {useContext} from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
-import {Theme} from '../components/context/theme'
+import {Theme} from '../context/theme'
 
 export default function Home() {
 
